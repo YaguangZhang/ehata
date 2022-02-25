@@ -1,6 +1,6 @@
 #include "../include/ehata.h"
 
-double FindQuantile(const int &nn, double *a, const int &ir)
+double FindQuantile(const int nn, double *a, const int ir)
 {
     double q, r;
     int m, n, i, j, j1, i0, k;

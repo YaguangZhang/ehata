@@ -10,6 +10,9 @@
 *                1  : low end
 *                0  : high end
 *               -1  : equal amounts on both ends
+*   Outputs:
+*       interValues->trace_code : debug trace flag to document code
+*               execution path for tracing and testing purposes
 *   Return:
 *       [double] : correction factor
 */

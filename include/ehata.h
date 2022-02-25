@@ -11,6 +11,8 @@
 #define MIN(x, y) (((x) < (y)) ? (x) : (y))
 #endif
 
+#include <cstdint>
+
 struct InterValues
 {
     double d_bp__km;
@@ -44,7 +46,7 @@ struct InterValues
 #define PI 3.14159265358979323846
 
 // public
-DLLEXPORT void ExtendedHata(double pfl[], double f__mhz, double h_b__meter, double h_m__meter, int environment, double reliability, double *plb);
+DLLEXPORT double ExtendedHata(double pfl[], double f__mhz, double h_b__meter, double h_m__meter, int8_t enviro_code, double reliability);
 DLLEXPORT void ExtendedHata_DBG(double pfl[], double f__mhz, double h_b__meter, double h_m__meter, int environment, double reliability, double *plb, InterValues *interValues);
 
 // private
@@ -55,7 +57,7 @@ void AnalyzeSeaPath(double* pfl, InterValues *interValues);
 void FindHorizons(double *pfl, double gme, double d__meter, double h_1__meter, double h_2__meter, double *d_hzn__meter);
 void SingleHorizonTest(double *pfl, double h_m__meter, double h_b__meter, InterValues *interValues);
 void ComputeTerrainStatistics(double *pfl, InterValues *interValues);
-double FindQuantile(const int &nn, double *apfl, const int &ir);
+double FindQuantile(const int nn, double *apfl, const int ir);
 void PreprocessTerrainPath(double *pfl, double h_b__meter, double h_m__meter, InterValues *interValues);
 double AverageTerrainHeight(double *pfl);
 double GeneralSlopeCorrectionFactor(double theta_m__mrad, double d__km);

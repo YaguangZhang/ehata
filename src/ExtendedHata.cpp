@@ -15,11 +15,15 @@
 *   Outputs:
 *       plb : path loss, in dB
 */
-void ExtendedHata(double pfl[], double f__mhz, double h_b__meter, double h_m__meter,
-    int enviro_code, double reliability, double *plb)
+double ExtendedHata(double pfl[], double f__mhz, double h_b__meter, double h_m__meter,
+	int8_t enviro_code, double reliability)
 {
+	double plb;
+
     InterValues interValues;
-    ExtendedHata_DBG(pfl, f__mhz, h_b__meter, h_m__meter, enviro_code, reliability, plb, &interValues);
+    ExtendedHata_DBG(pfl, f__mhz, h_b__meter, h_m__meter, int(enviro_code), reliability, &plb, &interValues);
+
+	return plb;
 }
 
 /*
