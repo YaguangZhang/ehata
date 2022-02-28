@@ -14,6 +14,7 @@ include_directories(include)
 file(GLOB SOURCES "src/*.cpp")
 
 # Shared Library
-add_library(ehata SHARED ${SOURCES})
+add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
-set_target_properties(ehata PROPERTIES PREFIX "")
+# Remove prefix
+set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
