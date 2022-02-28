@@ -15,3 +15,5 @@ file(GLOB SOURCES "src/*.cpp")
 
 # Shared Library
 add_library(ehata SHARED ${SOURCES})
+
+set_target_properties(ehata PROPERTIES PREFIX "")
