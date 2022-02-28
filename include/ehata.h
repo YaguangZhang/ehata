@@ -1,12 +1,12 @@
 #pragma once
 #ifdef _WIN32
 // Export the DLL functions as "C" and not C++
-// #define DLLEXPORT extern "C" __declspec(dllexport)
+#define DLLEXPORT extern "C" __declspec(dllexport)
 #define MAX(x, y) (((x) > (y)) ? (x) : (y))
 #define MIN(x, y) (((x) < (y)) ? (x) : (y))
 #endif
 #ifdef __linux__
-// #define DLLEXPORT extern "C"
+#define DLLEXPORT extern "C"
 #define MAX(x, y) (((x) > (y)) ? (x) : (y))
 #define MIN(x, y) (((x) < (y)) ? (x) : (y))
 #endif
@@ -46,5 +46,5 @@ typedef struct
 #define PI 3.14159265358979323846
 
 // public
-double ExtendedHata(double pfl[], double f__mhz, double h_b__meter, double h_m__meter, int8_t enviro_code, double reliability);
-void ExtendedHata_DBG(double pfl[], double f__mhz, double h_b__meter, double h_m__meter, int environment, double reliability, double *plb, InterValues *interValues);
+DLLEXPORT double ExtendedHata(double pfl[], double f__mhz, double h_b__meter, double h_m__meter, int8_t enviro_code, double reliability);
+DLLEXPORT void ExtendedHata_DBG(double pfl[], double f__mhz, double h_b__meter, double h_m__meter, int environment, double reliability, double *plb, InterValues *interValues);
