@@ -1,4 +1,5 @@
 #include "../include/ehata.h"
+#include "../include/ehataprivate.h"
 
 /*
 *   Description: The Extended-Hata Urban Propagation Model

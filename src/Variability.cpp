@@ -1,6 +1,10 @@
 #include "../include/ehata.h"
 #include "math.h"
 
+double Sigma_u(double f__mhz);
+double Sigma_r(double f__mhz);
+double ierf(double q);
+
 double Variability(double plb_med__db, double f__mhz, int enviro_code, double reliability)
 {
     double sigma;
