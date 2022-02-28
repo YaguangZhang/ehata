@@ -1,5 +1,6 @@
 #include "../include/ehata.h"
 #include "math.h"
+#include "FineRollingHillyTerrainCorrectionFactor.h";
 
 /*
 *   Description: Find the fine rolling hill terrain correction factor

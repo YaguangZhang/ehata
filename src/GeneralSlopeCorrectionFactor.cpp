@@ -1,4 +1,5 @@
-#include "../include/ehata.h"
+// #include "../include/ehata.h"
+#include "GeneralSlopeCorrectionFactor.h";
 
 /*
 *   Description: Find the general slope correction factor

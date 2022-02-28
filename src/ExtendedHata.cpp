@@ -1,5 +1,12 @@
 #include "../include/ehata.h"
-#include "../include/ehataprivate.h"
+#include "PreprocessTerrainPath.h"
+#include "MedianBasicPropLoss.h"
+#include "Variability.h"
+#include "IsolatedRidgeCorrectionFactor.h"
+#include "MixedPathCorrectionFactor.h"
+#include "MedianRollingHillyTerrainCorrectionFactor.h"
+#include "FineRollingHillyTerrainCorrectionFactor.h"
+#include "GeneralSlopeCorrectionFactor.h"
 
 /*
 *   Description: The Extended-Hata Urban Propagation Model

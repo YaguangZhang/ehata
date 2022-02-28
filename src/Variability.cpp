@@ -1,4 +1,4 @@
-#include "../include/ehata.h"
+#include "Variability.h"
 #include "math.h"
 
 double Sigma_u(double f__mhz);

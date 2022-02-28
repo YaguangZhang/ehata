@@ -1,4 +1,5 @@
 #include "../include/ehata.h"
+#include "FindQuantile.h"
 
 double FindQuantile(const int nn, double *a, const int ir)
 {

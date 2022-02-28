@@ -1,6 +1,16 @@
-#include "../include/ehata.h"
-#include "../include/ehataprivate.h"
+#include "PreprocessTerrainPath.h"
+#include "Variability.h"
+#include "FindQuantile.h"
+#include "LeastSquares.h"
 #include "math.h"
+#include "FindHorizons.h"
+
+void FindAverageGroundHeight(double *pfl, double h_m__meter, double h_b__meter, InterValues *interValues);
+void ComputeTerrainStatistics(double *pfl, InterValues *interValues);
+void MobileTerrainSlope(double *pfl, InterValues *interValues);
+void AnalyzeSeaPath(double* pfl, InterValues *interValues);
+double AverageTerrainHeight(double *pfl);
+void SingleHorizonTest(double *pfl, double h_m__meter, double h_b__meter, InterValues *interValues);
 
 void PreprocessTerrainPath(double *pfl, double h_b__meter, double h_m__meter, InterValues *interValues)
 {

@@ -1,5 +1,6 @@
 #include "../include/ehata.h"
-#include "math.h"
+// #include "math.h"
+#include "LeastSquares.h"
 
 /*
 *   Description: Least squares fit

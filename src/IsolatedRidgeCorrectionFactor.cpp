@@ -1,5 +1,6 @@
 #include "../include/ehata.h"
 #include "math.h"
+#include "IsolatedRidgeCorrectionFactor.h";
 
 /*
 *   Description: Find the isolated ridge correction factor
