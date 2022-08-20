@@ -1,12 +1,22 @@
 # The NTIA Extended Hata (eHata) Urban Propagation Model for Matlab #
 
-The original [NTIA eHata model](https://github.com/NTIA/ehata) was implement in C++, which does not work with Matlab. This repository slightly modified the source code so that the model would appear to be written in C and thus loadable in Maltab. Tested with Matlab 2021a for both Windows and Ubuntu.
+The original [NTIA eHata model](https://github.com/NTIA/ehata) was implement in C++, which does not work with Matlab. This repository slightly modified the source code so that the model would appear to be written in C and thus loadable in Maltab.
 
-On Windows, please use the library files `ehata.dll` (built in Visual Studio 2019) and `ehata.h` under `LibReleasesForMatlab`. On Ubuntu, please use `ehata.so` (built based on the included CMake file `CMakeLists.txt`) and `ehata.h` in the same directory. Note that the header file `ehata.h` we feed into Matlab is different from that in the source code (under directory `include`).
+## Notes
 
-More information about the original NTIA eHata library can be found below.
+- Tested with Matlab 2021a for both Windows and Ubuntu.
+- On Windows, please use the library files `ehata.dll` (built in Visual Studio 2019) and `ehata.h` under `LibReleasesForMatlab`.
+- On Ubuntu, please use `ehata.so` (built based on the included CMake file `CMakeLists.txt`) and `ehata.h` in the same directory.
+- Note that the header file `ehata.h` we feed into Matlab is different from that in the source code (under directory `include`).
+- More information about the original NTIA eHata library can be found below.
 
-Contact: Dr. Yaguang Zhang (yaguangzhang@outlook.com)
+## Acknowledgment
+
+Thanks to [Dr. Tomohiro Arakawa](https://www.tarakawa.net/) for his patient guidance in the code modification process!
+
+## Contact
+
+* Dr. **Yaguang Zhang** | *Purdue University* | Email: yaguangzhang@outlook.com
 
 ---
 
